@@ -10,7 +10,7 @@ e.pack()
 e.get()
 
 def mp4():
-	youtube = pytube.YouTube(e.get())
+	youtube = YouTube(e.get())
 	video = youtube.streams.first()
 	video.download()
 	success = Label(root, text="Successfully downloaded: " + e.get())
